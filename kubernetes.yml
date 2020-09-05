@@ -34,11 +34,11 @@ spec:
     volumes:
     - name: nginx-site
       hostPath:
-        path: %APP_ROOT%/app
+        path: /opt/jenkins_slave/workspace/RetakeExam-Application/app
         type: Directory
     - name: php-site
       hostPath:
-        path: %APP_ROOT%/app
+        path: /opt/jenkins_slave/workspace/RetakeExam-Application/app
         type: Directory
 ---
 apiVersion: v1
