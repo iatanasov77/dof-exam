@@ -34,11 +34,11 @@ spec:
     volumes:
     - name: nginx-site
       hostPath:
-        path: /vagrant/src/app
+        path: %APP_ROOT%/app
         type: Directory
     - name: php-site
       hostPath:
-        path: /vagrant/src/app
+        path: %APP_ROOT%/app
         type: Directory
 ---
 apiVersion: v1
